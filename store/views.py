@@ -13,7 +13,7 @@ def product_list(request):
 
     query_set = Product.objects.all()
     serializer = ProductSerializer(query_set , many=True)
-    return Response(serializer.data`)
+    return Response(serializer.data)
 
 @api_view()
 def product_detail(request , id):
